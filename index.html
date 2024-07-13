@@ -17,13 +17,13 @@
                 <div class="pergunta">
                     <h2>1 - Qual comando é usado para criar uma nova tabela no MySQL?</h2>
                 </div>
-                <div class="alter1">
+                <div class="alter1" id="res1" onclick="resposta1()">
                     <span><p>A</p></span> <h3>New Table</h3>
                 </div>
-                <div class="alter2">
+                <div class="alter2" id="res2" onclick="resposta2()">
                     <span><p>B</p></span> <h3> Create Table</h3>
                 </div>
-                <div class="alter3">
+                <div class="alter3" id="res3" onclick="resposta3()">
                     <span><p>C</p></span> <h3>Make Table</h3>
                 </div>
             
@@ -35,6 +35,26 @@
     </main>
 
     <script>
+        let res1 = document.getElementById('res1')
+        let res2 = document.getElementById('res2')
+        let res3 = document.getElementById('res3')
+
+        function resposta1() {
+            if (res1) {
+                res1.style.background = 'red'
+            }
+        }
+        function resposta2() {
+            if (res2) {
+              res2.style.background = 'green'
+            }
+        }
+        function resposta3() {
+            if (res3) {
+              res3.style.background = 'red'
+            }
+        }
+        
         function proximo() {
             window.location.href = './perguntas/pergunta2.html'
         }
