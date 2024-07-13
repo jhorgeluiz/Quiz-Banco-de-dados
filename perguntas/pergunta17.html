@@ -16,13 +16,13 @@
                 <div class="pergunta">
                     <h2>17 - Como criar um usuário no MySQL?</h2>
                 </div>
-                <div class="alter1">
+                <div class="alter1" id="A" onclick="respostaA()">
                     <span><p>A</p></span> <h3>ADD USER 'usuario'@'host' IDENTIFIED BY 'senha';</h3>
                 </div>
-                <div class="alter2">
+                <div class="alter2" id="B" onclick="respostaB()">
                     <span><p>B</p></span> <h3>CREATE USER 'usuario'@'host' IDENTIFIED BY 'senha';</h3>
                 </div>
-                <div class="alter3">
+                <div class="alter3" id="C" onclick="respostaC()">
                     <span><p>C</p></span> <h3>NEW USER 'usuario'@'host' IDENTIFIED BY 'senha';</h3>
                 </div>
             
@@ -34,6 +34,33 @@
     </main>
 
     <script>
+        let A = document.getElementById('A')
+        let B = document.getElementById('B')
+        let C = document.getElementById('C')
+
+        function respostaA() {
+            if (A) {
+                A.style.background = 'red'
+                A.style.boxShadow = '3px 3px 20px 3px red'
+                A.style.borderColor = 'red'
+            }
+        }
+        function respostaB() {
+            if (B) {
+                B.style.background = 'Chartreuse'
+                B.style.boxShadow = '3px 3px 20px 3px Chartreuse'
+                B.style.borderColor = 'Chartreuse'
+            }
+        }
+        function respostaC() {
+            if (C) {
+                C.style.background = 'red'
+                C.style.boxShadow = '3px 3px 20px 3px red'
+                C.style.borderColor = 'red'
+            }
+        }
+
+
         function proximo() {
             window.location.href = 'pergunta18.html'
         }
