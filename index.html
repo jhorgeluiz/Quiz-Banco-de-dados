@@ -3,71 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Banco de dados</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <title>Quiz Banco de dados</title>
+    <style>
+        .texto {
+            border-radius: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            border: 3px solid #0f965d;
+            background-color: #f5f5dc9a;
+            padding: 10px;
+            width: 370px;
+            height: 200px;
+        }
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    
+        .cont-bot {
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        button {
+            background-color: #f5f5dc7c;
+            border: 3px solid #0f965d;
+            font-size: 25px;
+            font-weight: 800;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            height: 80px;
+        }
+    </style>
+
 </head>
 <body>
-    <header>
-        <h1>Quiz Banco de dados</h1>
-    </header>
     <main>
-        <section class="pergunta1">
-            <article>
-                <div class="pergunta">
-                    <h2>1 - Qual comando é usado para criar uma nova tabela no MySQL?</h2>
-                </div>
-                <div class="alter1" id="res1" onclick="resposta1()">
-                    <span><p>A</p></span> <h3>New Table</h3>
-                </div>
-                <div class="alter2" id="res2" onclick="resposta2()">
-                    <span><p>B</p></span> <h3> Create Table</h3>
-                </div>
-                <div class="alter3" id="res3" onclick="resposta3()">
-                    <span><p>C</p></span> <h3>Make Table</h3>
-                </div>
-            
-            </article>
-            <div class="cont_botao">
-                <button onclick="proximo()">Próximo</button>
-            </div>
-        </section>
+        <div class="texto">
+            <h2>Bem-vindo(a) ao Quiz de Banco de Dados!<br>Você quer aprender comandos básicos de banco de dados? Veio ao lugar certo. Clique no botão e Bom aprendizado!</h2>
+        </div>
+        <div class="cont-bot">
+            <button onclick="iniciar()">Iniciar</button>
+        </div>
     </main>
 
     <script>
-        let res1 = document.getElementById('res1')
-        let res2 = document.getElementById('res2')
-        let res3 = document.getElementById('res3')
-
-        function resposta1() {
-            if (res1) {
-                res1.style.background = 'red'
-                res1.style.boxShadow = '3px 3px 20px 3px red'
-                res1.style.borderColor = 'red'
-            }
-        }
-        function resposta2() {
-            if (res2) {
-                res2.style.background = 'Chartreuse'
-                res2.style.boxShadow = '3px 3px 20px 3px Chartreuse'
-                res2.style.borderColor = 'Chartreuse'
-            }
-        }
-        function resposta3() {
-            if (res3) {
-                res3.style.background = 'red'
-                res3.style.boxShadow = '3px 3px 20px 3px red'
-                res3.style.borderColor = 'red'
-            }
-        }
-        
-        function proximo() {
-            window.location.href = './perguntas/pergunta2.html'
+        function iniciar() {
+            window.location.href = './perguntas/pergunta1.html'
         }
     </script>
-
-    <footer>&#169;Desenvolvido por Jorge luiz</footer>
 </body>
 </html>

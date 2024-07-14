@@ -15,6 +15,22 @@
         .fim {
             font-size: 50px;
         }
+
+        .cont-bot {
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        button {
+            background-color: #f5f5dc7c;
+            border: 3px solid #0f965d;
+            font-size: 25px;
+            font-weight: 800;
+            border-radius: 10px;
+            width: 300px;
+            height: 100px;
+        }
     </style>
 </head>
 <body>
@@ -28,10 +44,17 @@
             <h1 class="fim">FIM!</h1>
         </div>
 
-
-
+        <div class="cont-bot">
+            <button onclick="reiniciar()">Reiniciar</button>
+        </div>
     </main>
 
     <footer>&#169;Desenvolvido por Jorge luiz</footer>
+
+    <script>
+        function reiniciar() {
+            window.location.href = '/index.html'
+        }
+    </script>
 </body>
 </html>
