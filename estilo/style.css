@@ -2,7 +2,7 @@
 
 /* ====================CAPA TELA PEQUENA==================== */
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 360px) and (max-width: 768px) {
 
     html {
         height: 100%;
