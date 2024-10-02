@@ -12,7 +12,7 @@
         <h1>Quiz Banco de dados</h1>
     </header>
     <main>
-        <section class="pergunta1">
+        <section id="pergunta1">
             <article>
                 <div class="pergunta">
                     <h2>1 - Qual comando é usado para criar uma nova tabela no MySQL?</h2>
@@ -38,6 +38,7 @@
         let res1 = document.getElementById('res1')
         let res2 = document.getElementById('res2')
         let res3 = document.getElementById('res3')
+        
 
         function resposta1() {
             if (res1) {
@@ -59,6 +60,7 @@
                 res1.style.display = 'none'
                 res3.style.display = 'none'
                 res2.style.marginTop = '20px'
+                
             }
         }
         function resposta3() {
@@ -76,6 +78,10 @@
         function proximo() {
             window.location.href = 'pergunta2.html'
         }
+
+
+
+        
     </script>
 
     <footer>&#169;Desenvolvido por Jorge luiz</footer>
